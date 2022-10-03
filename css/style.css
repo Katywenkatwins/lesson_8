@@ -242,7 +242,7 @@ display: inline-block;
 	padding: 0;
 	width: 90%;
 	height: 150px;
-	background:url("../img/win.png") 30% center/ 50px 50px no-repeat, radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%) ;
+	background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%) ;
 	color: #fff;
 	font-size: 40px;
 	text-transform: uppercase;
@@ -260,31 +260,39 @@ display: inline-block;
 {
 	visibility: hidden;
 } 
-.game__block-1:hover +div, .game__block-1:hover{
+.game__block-1:hover +div, .game__block-1:hover {
 
 	visibility: inherit;
 }
-.game__block-2:hover +div, .game__block-2:hover{
+.game__block-2:hover +div, .game__block-2:hover {
 	
 	visibility: inherit;
 }
-.game__block-3:hover +div, .game__block-3:hover{
+.game__block-3:hover +div, .game__block-3:hover {
 
 	visibility: inherit;
 }
-.game__block-4:hover +div, .game__block-4:hover{
+.game__block-4:hover +div, .game__block-4:hover {
 
 	visibility: inherit;
 }
-.game__block-5:hover +div, .game__block-5:hover{
+.game__block-5:hover +div, .game__block-5:hover {
 
 	visibility: inherit;
 }
-.game__block-6:hover +div, .game__block-6:hover{
+.game__block-6:hover +div, .game__block-6:hover {
 
 	visibility: inherit;
 }
 
 .game__win:hover {
 	visibility: inherit;
+}
+
+.win::before, .win::after{
+	content: "";
+	display: inline-block;
+	background: url("../img/win.png") 0 0 / 50px 50px repeat-x;
+	width: 30%;
+	height: 50px;
 }
